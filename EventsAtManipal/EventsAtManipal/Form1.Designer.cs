@@ -1,4 +1,4 @@
-﻿namespace EventaAtManipal
+﻿namespace EventsAtManipal
 {
     partial class Form1
     {

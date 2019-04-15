@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84CC9843-BD20-4E24-BD27-5914007F5383}</ProjectGuid>
+    <ProjectGuid>{9D529358-EC12-4BD7-BDA7-1FA0050B139D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EventaAtManipal</RootNamespace>
-    <AssemblyName>EventaAtManipal</AssemblyName>
+    <RootNamespace>EventsAtManipal</RootNamespace>
+    <AssemblyName>EventsAtManipal</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

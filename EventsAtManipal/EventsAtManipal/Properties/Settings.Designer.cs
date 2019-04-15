@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EventaAtManipal.Properties
+namespace EventsAtManipal.Properties
 {
 
 
