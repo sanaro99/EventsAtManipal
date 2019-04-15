@@ -20,3 +20,6 @@ D:\DBS_proj\EventsAtManipal-master\EventsAtManipal\EventsAtManipal\bin\Debug\Eve
 D:\DBS_proj\EventsAtManipal-master\EventsAtManipal\EventsAtManipal\bin\Debug\EventsAtManipal.pdb
 D:\DBS_proj\EventsAtManipal-master\EventsAtManipal\EventsAtManipal\obj\Debug\EventsAtManipal.Properties.Resources.resources
 D:\DBS_proj\EventsAtManipal-master\EventsAtManipal\EventsAtManipal\obj\Debug\EventsAtManipal.csproj.CoreCompileInputs.cache
+D:\Project\EventsAtManipal\EventsAtManipal\EventsAtManipal\obj\Debug\EventsAtManipal.CCMembers_form.resources
+D:\Project\EventsAtManipal\EventsAtManipal\EventsAtManipal\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Project\EventsAtManipal\EventsAtManipal\EventsAtManipal\obj\Debug\EventsAtManipal.csproj.CopyComplete

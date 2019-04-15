@@ -7,11 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
+using Oracle.ManagedDataAccess.Types;
+
 
 namespace EventsAtManipal
 {
     public partial class Form1 : Form
     {
+        OracleConnection conn;
+        OracleDataAdapter da;
+        DataRow dr;
+        DataTable dt;
+        DataSet ds;
+        OracleCommand cmd;
+
         public Form1()
         {
             InitializeComponent();
@@ -29,20 +39,52 @@ namespace EventsAtManipal
         {
             String user = userTextBox.Text;
             String pass = textBox1.Text;
-            String table="";
+            String c = "";
             switch(comboBox1.SelectedIndex)
             {
-                case 0: table = "CCMEMBERS";
+                case 0: c = "select password from CCMEMBERS where MEMBER_ID = " + user;
                     break;
-                case 1: table = "PARTICIPANTS";
+                case 1:
+                    c = "select password from PARTICIPANT where PARTICIPANT_ID = " + user;
                     break;
-                case 2: table = "EVENT_HEADS";
+                case 2:
+                    c = "select password from EVENT_HEADS where HEAD_ID = " + user;
                     break;
-                case 3: table = "JUDGES";
+                case 3:
+                    c = "select password from JUDGES where JUDGE_ID = " + user;
                     break;
             }
-            String cmd = "select password from " + table + " where username=" + user;
-            MessageBox.Show(cmd);
+            try
+            {
+                DB_Connect();
+                cmd = new OracleCommand();
+                cmd.CommandText = c;
+                cmd.CommandType = CommandType.Text;
+                ds = new DataSet();
+                da = new OracleDataAdapter(cmd.CommandText, conn);
+                da.Fill(ds, "Tbl_ccmembers");
+                dt = ds.Tables["Tbl_ccmembers"];
+                int t = dt.Rows.Count;
+                dr = dt.Rows[0];
+                String opass = dr["password"].ToString();
+                if (opass.Equals(pass))
+                {
+                    MessageBox.Show("Login Successful");
+                }
+                else
+                    MessageBox.Show("Login Unsuccessful");
+            }
+            catch(Exception e1)
+            {
+                MessageBox.Show("Login Unsuccessful");
+            }
+        }
+
+        private void DB_Connect()
+        {
+            String oradb = "DATA SOURCE=127.0.0.1:1521/ORCL;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=password";
+            conn = new OracleConnection(oradb);
+            conn.Open();
         }
 
         private void userTextBox_TextChanged(object sender, EventArgs e)
