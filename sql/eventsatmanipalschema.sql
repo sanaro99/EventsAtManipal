@@ -7,11 +7,11 @@ CREATE TABLE CATEGORY (
 CREATE TABLE CCMEMBERS (
 	member_id int NOT NULL,
 	member_name varchar(30) NOT NULL,
-	category_id int NOT NULL,
+	category_name varchar(20) NOT NULL,
 	phone_num varchar(10) NOT NULL,
 	password varchar(20) NOT NULL,
 	PRIMARY KEY (member_id),
-	FOREIGN KEY (category_id) REFERENCES CATEGORY(category_id)
+	FOREIGN KEY (category_name) REFERENCES CATEGORY(category_name)
 );
 
 CREATE TABLE EVENT (
@@ -60,7 +60,9 @@ CREATE TABLE PARTICIPANT (
 	hostel_block int NOT NULL,
 	gender varchar(1) NOT NULL,
 	college varchar(30) NOT NULL,
-	PRIMARY KEY (participant_id)
+	password varchar(30) NOT NULL,
+	PRIMARY KEY (participant_id),
+	check (gender in ('M', 'F'))
 );
 
 CREATE TABLE TEAM_MEMBERS (
