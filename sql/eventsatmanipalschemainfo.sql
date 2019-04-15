@@ -79,5 +79,15 @@
 	insert into CCMEMBERS values(2029,'Krishan Ghoshal','Vigilance','7555228938','Kri123');
 	insert into CCMEMBERS values(2030,'Chettur Kamal','Vigilance','7555188275','Che123');
     
+    insert into EVENT_CATEGORY values(101,'Animania');
+	insert into EVENT_CATEGORY values(102,'Anubhuti');
+	insert into EVENT_CATEGORY values(103,'Crescendo');
+	insert into EVENT_CATEGORY values(104,'Dramebaaz');
+	insert into EVENT_CATEGORY values(105,'EQ-IQ');
+	insert into EVENT_CATEGORY values(106,'Ergo');
+	insert into EVENT_CATEGORY values(107,'Film Festival');
+	insert into EVENT_CATEGORY values(108,'Footloose');
+	insert into EVENT_CATEGORY values(109,'Gaming');
+	insert into EVENT_CATEGORY values(110,'Haute Couture');
     
-    
+        

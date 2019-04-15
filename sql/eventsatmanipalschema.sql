@@ -14,14 +14,18 @@ CREATE TABLE CCMEMBERS (
 	FOREIGN KEY (category_name) REFERENCES CATEGORY(category_name)
 );
 
-
+CREATE TABLE EVENT_CATEGORY (
+    category_id int NOT NULL,
+    category_name varchar(20) NOT NULL,
+    PRIMARY KEY (category_name)
+);
 CREATE TABLE EVENT (
 	event_name varchar(20) NOT NULL,
 	category_name varchar(20) NOT NULL,
 	description varchar(100) NOT NULL,
 	team_size int NOT NULL,
 	PRIMARY KEY (event_name),
-	FOREIGN KEY (category_name) REFERENCES CATEGORY(category_name)
+	FOREIGN KEY (category_name) REFERENCES EVENT_CATEGORY(category_name)
 );
 
 CREATE TABLE TEAM (
