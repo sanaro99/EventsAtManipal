@@ -14,6 +14,7 @@ CREATE TABLE CCMEMBERS (
 	FOREIGN KEY (category_name) REFERENCES CATEGORY(category_name)
 );
 
+
 CREATE TABLE EVENT (
 	event_name varchar(20) NOT NULL,
 	category_name varchar(20) NOT NULL,
@@ -85,10 +86,10 @@ CREATE TABLE EVENT_HEADS (
 CREATE TABLE VOLUNTEERS (
 	volunteerID int NOT NULL,
 	volunteer_name varchar(30) NOT NULL,
-	event_name varchar(20) NOT NULL,
+	category_name varchar(20),
 	phone_num varchar(10) NOT NULL,
 	PRIMARY KEY (volunteerID),
-	FOREIGN KEY (event_name) REFERENCES EVENT(event_name)
+	FOREIGN KEY (category_name) REFERENCES CATEGORY(category_name)
 );
 
 CREATE TABLE QUALIFIED (
