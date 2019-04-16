@@ -51,8 +51,8 @@ CREATE TABLE EVENT_ROUND (
 	event_name varchar(20) NOT NULL,
 	round int NOT NULL,
 	venue varchar(30) NOT NULL,
-	start_time TIMESTAMP NOT NULL,
-	end_time TIMESTAMP NOT NULL,
+	start_time varchar(30) NOT NULL,
+	end_time varchar(30) NOT NULL,
 	PRIMARY KEY (event_name,round),
 	FOREIGN KEY (event_name) REFERENCES EVENT(event_name)
 );
