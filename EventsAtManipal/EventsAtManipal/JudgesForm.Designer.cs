@@ -43,9 +43,9 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(358, 97);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(402, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(536, 387);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -73,7 +73,7 @@
             this.comboBox1.DropDownWidth = 121;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(706, 132);
+            this.comboBox1.Location = new System.Drawing.Point(154, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(131, 21);
             this.comboBox1.TabIndex = 3;
@@ -86,11 +86,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(628, 260);
+            this.button1.Location = new System.Drawing.Point(154, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 37);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Next Round";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -101,7 +101,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(628, 360);
+            this.button2.Location = new System.Drawing.Point(25, 418);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 36);
             this.button2.TabIndex = 4;
@@ -112,7 +112,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(574, 135);
+            this.label2.Location = new System.Drawing.Point(22, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 14);
             this.label2.TabIndex = 5;
@@ -130,7 +130,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "JudgesForm";
-            this.Text = "JudgesForm";
+            this.Text = "sel";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

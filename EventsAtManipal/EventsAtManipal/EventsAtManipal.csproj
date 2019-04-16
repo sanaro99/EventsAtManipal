@@ -74,7 +74,7 @@
     <Compile Include="ParticipantLoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ParticipantLoginPage.Designer.cs">
+    <Compile Include="ParticipantLoginPage.designer.cs">
       <DependentUpon>ParticipantLoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />

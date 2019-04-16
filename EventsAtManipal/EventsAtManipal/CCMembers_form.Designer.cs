@@ -74,7 +74,7 @@
             // 
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(137, 121);
+            this.comboBox1.Location = new System.Drawing.Point(156, 121);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(165, 21);
             this.comboBox1.TabIndex = 5;
@@ -87,9 +87,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(345, 118);
+            this.button1.Location = new System.Drawing.Point(156, 163);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 34);
+            this.button1.Size = new System.Drawing.Size(165, 34);
             this.button1.TabIndex = 6;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
@@ -98,9 +98,9 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(549, 87);
+            this.dataGridView1.Location = new System.Drawing.Point(371, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(347, 351);
+            this.dataGridView1.Size = new System.Drawing.Size(525, 351);
             this.dataGridView1.TabIndex = 7;
             // 
             // button2
@@ -111,9 +111,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(345, 229);
+            this.button2.Location = new System.Drawing.Point(156, 255);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 34);
+            this.button2.Size = new System.Drawing.Size(165, 34);
             this.button2.TabIndex = 8;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = false;
@@ -122,7 +122,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 237);
+            this.label3.Location = new System.Drawing.Point(12, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 18);
             this.label3.TabIndex = 4;

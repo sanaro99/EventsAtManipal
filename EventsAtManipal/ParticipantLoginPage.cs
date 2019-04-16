@@ -23,11 +23,8 @@ namespace EventsAtManipal
         DataTable datatable;
         OracleDataAdapter dataadapter;
         int i = 0;
+        
 
-        public ParticipantLoginPage()
-        {
-            InitializeComponent();
-        }
         private void DB_Connect()
         {
             String ConnectionString = "DATA SOURCE=127.0.0.1:1521/ORCL;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=password";
