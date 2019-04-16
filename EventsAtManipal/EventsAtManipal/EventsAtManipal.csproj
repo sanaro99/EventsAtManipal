@@ -53,6 +53,12 @@
     <Compile Include="CCMembers_form.designer.cs">
       <DependentUpon>CCMembers_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventHome.Designer.cs">
+      <DependentUpon>EventHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,12 @@
     <Compile Include="JudgesForm.Designer.cs">
       <DependentUpon>JudgesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParticipantLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticipantLoginPage.Designer.cs">
+      <DependentUpon>ParticipantLoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CCMembers_form.resx">
@@ -76,6 +88,18 @@
     <EmbeddedResource Include="JudgesForm.resx">
       <DependentUpon>JudgesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="TeamPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamPage.Designer.cs">
+      <DependentUpon>TeamPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EventHome.resx">
+      <DependentUpon>EventHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticipantLoginPage.resx">
+      <DependentUpon>ParticipantLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +110,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TeamPage.resx">
+      <DependentUpon>TeamPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
