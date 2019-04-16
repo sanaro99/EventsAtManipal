@@ -22,10 +22,12 @@ namespace EventsAtManipal
         DataTable datatable;
         OracleDataAdapter dataadapter;
         int i = 0;
+        String user;
 
-        public EventHome()
+        public EventHome(string user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void DB_Connect()
@@ -54,6 +56,9 @@ namespace EventsAtManipal
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             string eventname = datagrid.SelectedRows[0].Cells[0].Value.ToString();
+            TeamPage tp = new TeamPage(user,eventname);
+            this.Hide();
+            tp.Show();
             MessageBox.Show(eventname);
         }
     }

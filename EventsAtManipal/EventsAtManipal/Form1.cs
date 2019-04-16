@@ -73,7 +73,7 @@ namespace EventsAtManipal
                             this.Hide();
                             break;
                         case 1:
-                            EventHome eh = new EventHome();
+                            EventHome eh = new EventHome(user);
                             eh.Show();
                             this.Hide();
                             break;

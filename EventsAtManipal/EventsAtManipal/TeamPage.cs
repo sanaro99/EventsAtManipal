@@ -23,10 +23,14 @@ namespace EventsAtManipal
         OracleDataAdapter dataadapter;
         int i = 0;
         int teamid;
+        String user;
+        String eventname;
 
-        public TeamPage()
+        public TeamPage(String user,String eventname)
         {
             InitializeComponent();
+            this.user = user;
+            this.eventname = eventname;
         }
 
         private void DB_Connect()
@@ -58,12 +62,22 @@ namespace EventsAtManipal
             DB_Connect();
             command = new OracleCommand();
             command.Connection = connection;
-            string eventname = "Mime";
             command.CommandText = "insert into TEAM values (" + teamid + ", '" + eventname +"')";
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
+            command2 = new OracleCommand();
+            command2.Connection = connection;
+            command2.CommandText = "insert into TEAM_MEMBERS values (" + teamid + ", " + int.Parse(user) + ")";
+            command2.CommandType = CommandType.Text;
+            command2.ExecuteNonQuery();
             string msg = "Your Team ID for the " + eventname + " is " + teamid.ToString();
             MessageBox.Show(msg);
+        }
+
+        private void TeamPage_Load(object sender, EventArgs e)
+        {
+            ParticipantIDLabel.Text = user;
+            EventNameLabel.Text = eventname;
         }
     }
 }

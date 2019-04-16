@@ -34,8 +34,8 @@
             this.generate = new System.Windows.Forms.Button();
             this.submit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.event_name = new System.Windows.Forms.Label();
-            this.participant_name = new System.Windows.Forms.Label();
+            this.EventNameLabel = new System.Windows.Forms.Label();
+            this.ParticipantIDLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // team
@@ -50,9 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(174, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Name : ";
+            this.label1.Text = "Your ID : ";
             // 
             // label2
             // 
@@ -92,29 +92,29 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Team ID : ";
             // 
-            // event_name
+            // EventNameLabel
             // 
-            this.event_name.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.event_name.Location = new System.Drawing.Point(269, 126);
-            this.event_name.Name = "event_name";
-            this.event_name.Size = new System.Drawing.Size(87, 22);
-            this.event_name.TabIndex = 6;
+            this.EventNameLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.EventNameLabel.Location = new System.Drawing.Point(269, 126);
+            this.EventNameLabel.Name = "EventNameLabel";
+            this.EventNameLabel.Size = new System.Drawing.Size(113, 22);
+            this.EventNameLabel.TabIndex = 6;
             // 
-            // participant_name
+            // ParticipantIDLabel
             // 
-            this.participant_name.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.participant_name.Location = new System.Drawing.Point(269, 55);
-            this.participant_name.Name = "participant_name";
-            this.participant_name.Size = new System.Drawing.Size(87, 20);
-            this.participant_name.TabIndex = 7;
+            this.ParticipantIDLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ParticipantIDLabel.Location = new System.Drawing.Point(269, 55);
+            this.ParticipantIDLabel.Name = "ParticipantIDLabel";
+            this.ParticipantIDLabel.Size = new System.Drawing.Size(113, 20);
+            this.ParticipantIDLabel.TabIndex = 7;
             // 
             // TeamPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.participant_name);
-            this.Controls.Add(this.event_name);
+            this.Controls.Add(this.ParticipantIDLabel);
+            this.Controls.Add(this.EventNameLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.generate);
@@ -123,6 +123,7 @@
             this.Controls.Add(this.team);
             this.Name = "TeamPage";
             this.Text = "TeamPage";
+            this.Load += new System.EventHandler(this.TeamPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,7 +137,7 @@
         private System.Windows.Forms.Button generate;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label event_name;
-        private System.Windows.Forms.Label participant_name;
+        private System.Windows.Forms.Label EventNameLabel;
+        private System.Windows.Forms.Label ParticipantIDLabel;
     }
 }
